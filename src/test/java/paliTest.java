@@ -8,5 +8,6 @@ class paliTest {
     void poli() {
         assertEquals(true, pali.poli("123321"));
         assertEquals(false, pali.poli("1231"));
+
     }
 }
