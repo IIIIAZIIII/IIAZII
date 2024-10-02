@@ -1,7 +1,15 @@
 public class Main {
 
     public static void main(String[] Clicks) {
-        OddEvenSeparator obj = new OddEvenSeparator();
+        Table obj = new Table(3,3);
+        for (int i = 0; i < obj.Rows(); i++){
+            for(int j = 0; j < obj.Cols(); j++){
+                obj.setValue(i,j,1);
+            }
+        }
+        System.out.println(obj);
+        System.out.println(obj.average());
+        /*OddEvenSeparator obj = new OddEvenSeparator();
         obj.addNamber(-3);
         obj.addNamber(6);
         obj.addNamber(7);
@@ -10,7 +18,7 @@ public class Main {
         obj.addNamber(6);
         obj.addNamber(3);
         obj.even();
-        obj.odd();
+        obj.odd();*/
         /*Bell obj = new Bell();
         Bell obj2 = new Bell();
         obj.sound();
